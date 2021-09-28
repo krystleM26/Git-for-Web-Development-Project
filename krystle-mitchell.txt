@@ -5,56 +5,146 @@ link to finished codepen https://codepen.io/teawithkrystle/pen/GREPgXd?editors=1
 Copy the questions below into the first-lastname.txt file on your github repo - answer each question and then push your changes.  
 
     1. What is Semantic HTML? 
-
+    Clearly describes its meaning to the developer or browser, 
+    for example it will be a <h1> tag.
     2. What is HTML used for? 
+    To structure a website.
     3. What is an attribute and where do we put it? 
+    Attributes are used to define properties or characteristics of an element. 
+    We typically place an attribute after a tag eg. <a href....
     4. What is the h1 tag used for? How many times should I use it on a page?
+    h1 tag is used for the title of the page, and you can only use it once. 
     5. Name two tags that have required attributes
+    Two tags with required attributes are: img, and html.
     6. What do we put in the head of our HTML document? 
+    We put the meta-tags and the title in our HTML doc.
     7. What is an id? 
+    An id specifies a unique attribute.
+
     8. What elements can I add an id to? 
+    An id only contains characters- no numbers or spaces, tabs, whitespace.
+
     9. How many times can I use the same id on a page? 
+        Once
+
     10. What is a class? 
+    An attribute that specifies a class for an element in HTML
+
     11. What elements can I add a class to? 
+    You can add the class element to the span, div, or section tags
+
     12. How many times can I use the same class on a page? 
+        Multiple times
+
     13. How do I get my link to open in a new tab?
-     
-    14. What is the alt attribute in the image tag used for? 
+        you will use  target="_blank"
+    14. What is the alt attribute in the image tag used for?
+         It is a required attribute to provide alternative text for an image that may not load. 
     15. How do I reference an id?
     You type a hashtag or pound symbol in front of the id's name
+
     16. What is the difference between a section and a div
+        A section is similar to a large container, and a div is a smaller box within that container.
+   
     17. What is CSS used for? 
-    18. How to we select an element? Example - every h2 on the page
+        It is used to style the website
+    
+    18. How do we select an element? Example - every h2 on the page
+        in CSS you would simply type h2 with {} and it will select all the h2 on the change
+    
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    
     20. How do we select classes in CSS?
         We use a dot/period {.}
+
     21. How do we select a p element with a single class of “human””?
+        You would type p -space- (.)~ dot - human with curly brackets
+
     22. What is a parent child selector? When would this be useful? 
+        A parent child selector is the following: parent > child. The selector can be used when trying to position a child element.
+
     23. How do you select all links within a div with the class of sidebar?
+        You would call the class ex. .sidebar:link 
+    
     24. What is a pseudo selector?
+        A class that selects element within a specific text.
+
     25. What do we use the change the spacing between lines?
+        line-height
+
     26. What do we use to change the spacing between letters?
+        letter-spacing: ~; will be the code you use to put space between the letters
+
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+        the property text-transform gives you the option to change the text to your preferred style. 
+
     28. How do I add a 1px border around my div that is dotted and black?
+        You will call the div name if it has a class and in the curly brackets include the property : border: 1px __ __
     29. How do I select everything on the page? 
     30. How do I write a comment in CSS?
-    /**/
+    /*--*/
     31. How do I find out what file I am in, when I am using the command line? 
+        In the terminal you will type pwd and it will show your location
+        
     32. Using the command line - how do I see a list of files/folders in my current folder?
+        You would type ls
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+        On a mac, you delete a file by typing rm in the terminal and add the file to the terminal window.
+        Next you will press enter, and the file will be gone forever, that is why you have to be careful when attempting to delete a file.
+
     34. Why should I use version control? 
+        Version control is good for tracking and controlling the code. 
     35. How often should I commit to github?
+        Whenever you are making a change to a code. It easy to collaborate with others on a code with VSC
+
     36. What is the command we would use to push our repo up to github? 
+        We would use : git push -u origin branch-name to push the code to github
+
     37. Walk me through Lambda's git flow. 
+        Step 1: Fork and clone a repository in github 
+        Step 2: Copy SSH key once repository is cloned
+        Step 3: Open Terminal 
+        Step 4: use cd to open the directory where you want to store the cloned repository
+        Step 5: Create a branch by typing the  git checkout -b 'firstname-lastname command in the terminal
+        Step 6: While working on project use the following steps to push the changes back to github
+                a- git add .
+                b- git commit -m ""
+                c- git push -u origin branch-name
+        Step 7: Back in gitHub click branch you created
+        Step 8: Click new pull request
+        Step 9: In pull request page click dropdown menu and choose the branch you created
+        Step 10: Submit pull request- link to Lambda Studio
+
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
-    2. What happens when an element is positioned absolutely? 
-    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
-    4. Name 3 elements that are display block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
-    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+        Inline element doesn't start on a new line it only takes up the necessary width.
+        While block element starts on a new line and ALWAYS takes up the full width available;
+        it also has a top and bottom margin. 
 
+    2. What happens when an element is positioned absolutely? 
+        The element will be taken out of flow, meaning it will align with its ancestor/parent element 
+        that is not static.
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+        You will use a div and the CSS box model which consists of margin, padding, and borders.
+
+    4. Name 3 elements that are display block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+         3 elements that are display:block by default are the following:
+                1. <p>
+                2. <div>
+                3  <ul>
+        2 elements that are display: inline by default are the following:
+                1. <img>
+                2. <a>
+        1 element that is display:inline-block by default is the following:
+                1. button
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+        The box model consists of four areas known as the following:
+                margin | border | padding | content
+        "Fix" for the box model is am element positioned for the relative viewport; meaning 
+        which keeps a box or section in the same place when a user scrolls a page
 
 
    --> 
